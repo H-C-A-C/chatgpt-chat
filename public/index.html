@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-icon">&#9881;</span>
+          <span class="logo-text">AI Chat</span>
+        </div>
+        <button class="clear-btn" id="clearBtn" title="会話をリセット">リセット</button>
+      </div>
+    </header>
+
+    <main class="chat-container" id="chatContainer">
+      <div class="welcome" id="welcome">
+        <div class="welcome-icon">&#128172;</div>
+        <h2>ChatGPT にメッセージを送ろう</h2>
+        <p>何でも聞いてください。</p>
+      </div>
+      <div class="messages" id="messages"></div>
+    </main>
+
+    <footer class="input-area">
+      <div class="input-wrapper">
+        <textarea
+          id="userInput"
+          class="input-box"
+          placeholder="メッセージを入力... (Shift+Enter で改行)"
+          rows="1"
+        ></textarea>
+        <button id="sendBtn" class="send-btn" title="送信">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </div>
+      <p class="hint">Enter で送信 / Shift+Enter で改行</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
